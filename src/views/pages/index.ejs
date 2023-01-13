@@ -1,0 +1,40 @@
+<%- include('../partials/head') %>
+<body>
+    <main>
+
+        <%- include('../partials/background') %>
+
+        <a href="<%-"/"%>"><img class="logo" src="/assets/logo.svg" alt="logo"></a>
+        <h1>atualize ideias e informações em 5 minutos.</h1>
+        <h2>tudo que você precisa saber para começar seu dia bem e informado</h2>
+        <p>noticias sobre o universo Rocketseat, e tudo o que precisa para começar o dia melhor.</p>
+        <p>perfeito para se preparar para codar ☕</p>
+        <form action="/" method="POST">
+            <label for="email">Insira seu e-mail:</label>
+            <div>
+                <input id="email" name="email" type="email" placeholder="oi@rocketseat.com">
+                <button class="send-email" type="submit" title="Enviar email">
+                    <img src="/assets/send.svg" alt="button_enviar" >
+                </button>
+                <div class="input-focus"></div>
+                <a href="/emails/list/1">
+                    <div class="list-emails">
+                        <div class="more-circles">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        Lista de Emails
+                    </div>
+                </a>
+            </div>
+        </form>
+        <a class="read-first" href="#">
+            deixe-me ler primeiro
+            <img src="assets/arrow-right.svg" alt="arrow-right">
+        </a>
+    </main>
+
+    <script src="javascripts/index.js"></script>
+</body>
+</html>
