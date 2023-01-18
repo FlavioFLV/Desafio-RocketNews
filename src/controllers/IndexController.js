@@ -16,6 +16,7 @@ module.exports = {
         res.render('index', {
             title: 'RocketNews | Home',
             cssFile: 'index',
+            modal: false
         });
     },
 
@@ -39,6 +40,7 @@ module.exports = {
         res.render('index', {
             title: 'RocketNews | Home',
             cssFile: 'index',
+            modal: true
             }
         );
     }

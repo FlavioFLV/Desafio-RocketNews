@@ -35,6 +35,21 @@
         </a>
     </main>
 
+    <% if (modal) { %>
+        <div class="modal-alert modalSucess">
+            <div class="modal-content">
+                <!-- <span>x</span> -->
+                <div>
+                    <img src="/assets/check.gif" alt="check_gif">
+                    <p>Email enviado com sucesso!</p>
+                </div>
+                <a href="/">
+                    <button class="modal-ok">Ok</button>
+                </a>
+            </div>
+        </div>
+    <% } %>
+
     <script src="javascripts/index.js"></script>
 </body>
 </html>

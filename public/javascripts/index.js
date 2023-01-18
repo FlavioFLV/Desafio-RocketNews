@@ -1,6 +1,8 @@
 const buttonSendEmail = document.querySelector(".send-email");
 const inputEmail = document.querySelector("#email");
 const inputFocus = document.querySelector(".input-focus");
+const modalSendEmail = document.querySelector(".modal-alert")
+const buttonModalOk = document.querySelector("button.modal-ok")
 
 window.addEventListener('load', function() {
 
@@ -32,4 +34,7 @@ window.addEventListener('load', function() {
         }
     })
 
+    buttonModalOk.addEventListener("click", () => {
+        modalSendEmail.style.display = "none"
+    })
 })
