@@ -25,6 +25,14 @@
                 <% }) %>
             </tbody>
         </table>
+
+        <div class="pages-wrapper">
+            <% for( i = 1; i <= totalPages; i++ ) { %>            
+                <a href="/emails/page/<%- i %>">
+                    <div <% if(currentPage == i ) { %> class="currentPage" <% } %> ><%= i %></div>
+                </a>
+            <% } %>
+        </div>
         
         <a href="/" class="home"><div>Voltar</div></a>
     </main>
