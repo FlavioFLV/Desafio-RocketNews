@@ -11,46 +11,18 @@
                 <th class="options">AÇÕES</th>
             </thead>
             <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>teste@teste.com</td>
-                    <td>18/01/2023</td>
-                    <td>
-                        <button type="button" class="delete">
-                            <img src="/assets/delete.svg" alt="img_delete" title="Excluir">
-                        </button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>teste@teste.com</td>
-                    <td>18/01/2023</td>
-                    <td>
-                        <button type="button" class="delete">
-                            <img src="/assets/delete.svg" alt="img_delete" title="Excluir">
-                        </button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>teste@teste.com</td>
-                    <td>18/01/2023</td>
-                    <td>
-                        <button type="button" class="delete">
-                            <img src="/assets/delete.svg" alt="img_delete" title="Excluir">
-                        </button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>teste@teste.com</td>
-                    <td>18/01/2023</td>
-                    <td>
-                        <button type="button" class="delete">
-                            <img src="/assets/delete.svg" alt="img_delete" title="Excluir">
-                        </button>
-                    </td>
-                </tr>
+                <% emails.forEach(email => { %>
+                    <tr>
+                        <td><%= email.id %></td>
+                        <td><%= email.email %></td>
+                        <td><%= email.createAt %></td>
+                        <td>
+                            <button type="button" class="delete">
+                                <img src="/assets/delete.svg" alt="img_delete" title="Excluir" value="<%- email.id %>">
+                            </button>
+                        </td>
+                    </tr>
+                <% }) %>
             </tbody>
         </table>
         
