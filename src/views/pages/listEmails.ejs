@@ -21,6 +21,19 @@
                                 <img src="/assets/delete.svg" alt="img_delete" title="Excluir" value="<%- email.id %>">
                             </button>
                         </td>
+                        <div class="modal-alert" >
+                            <div class="modal-content">
+                                <div>
+                                    <p>Tem certeza que deseja deletar este e-mail?</p>
+                                </div>
+                                <div class="actions">
+                                    <a href="/emails/page/<%- currentPage %>/delete/<%- email.id %>">
+                                        <button class="modal-ok">Ok</button>
+                                    </a>
+                                    <button type="button" class="modal-cancel">Cancelar</button>
+                                </div>
+                            </div>
+                        </div>
                     </tr>
                 <% }) %>
             </tbody>

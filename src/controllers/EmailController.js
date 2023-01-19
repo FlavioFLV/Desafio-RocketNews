@@ -38,4 +38,21 @@ module.exports = {
         })
     },
 
+    delete: function(req, res, next) {
+        let {id, page} = req.params;
+        let limit = 10
+
+        const currentData = readDbFile();
+        const selectedEmail = currentData.findIndex( email => email.id === parseInt(id))
+
+        currentData.splice(selectedEmail, 1)
+        writeDbFile(currentData)
+
+        if ((currentData.length / limit) < page) {
+            page = Math.ceil(currentData.length / limit)
+        }
+        
+        res.redirect(`/emails/page/${page}`)
+    }
+
 }
