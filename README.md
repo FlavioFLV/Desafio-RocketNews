@@ -26,8 +26,11 @@ Neste desafio você vai construir uma página para a captação de leads ou news
 - *Salvar os e-mails digitados em algum banco de dados*
 
 # ✏ **Minhas implementações**
-- *Criado botão para listar os e-mails cadastrados;*
+- *DOM para validar campo, se ou não preenchido ao enviar;*
+- *Botão para listar os e-mails cadastrados;*
 - *Paginação*;
-- *Opção de deletar e-mail da tabela e do banco de dados.*
+- *JSON para o banco de dados;*
+- *Ação de deletar e-mail.*
 
-![Gravar_2023_01_19_11_27_40_234](https://user-images.githubusercontent.com/89167170/213468203-0cb2df63-a699-4cad-84d8-41120e6d4fc2.gif)
+![Gravar_2023_01_19_11_47_15_934](https://user-images.githubusercontent.com/89167170/213473442-df44b629-d31e-41f1-b0e1-b4cd6cd89b09.gif)
+
