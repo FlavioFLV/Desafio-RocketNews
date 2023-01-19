@@ -14,6 +14,7 @@ Desenvolva uma página web simples utilizando HTML e CSS que servirá no futuro 
 - CSS
 - Javascript (implementado)
 - Express (implementado)
+- EJS
 
 # ✅ **Requisitos**
 Neste desafio você vai construir uma página para a captação de leads ou newslette.
