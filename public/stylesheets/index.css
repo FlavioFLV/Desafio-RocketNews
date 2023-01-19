@@ -175,7 +175,7 @@ a.read-first {
   background-color: var(--bg-button-color-hover);
   transition: ease-in-out .4s;
 }
-.list-emails .more-circles {
+.list-emails .more-options {
   display: flex;
   width: .35rem;
   flex-direction: column;
@@ -184,7 +184,7 @@ a.read-first {
   gap: .375rem 
 }
 
-.list-emails .more-circles div {
+.list-emails .more-options div {
   background-color: white;
   width: .35rem;
   height: .35rem;
@@ -194,14 +194,6 @@ a.read-first {
 button.send-email:hover {
   background-color: var(--bg-button-color-hover);
   transition: .2s;
-}
-
-.list-emails .more-circle {
-  width: .35rem;
-  height: .35rem;
-  border-radius: 100%;
-  background-color: white;
-
 }
 
 .modal-alert.modalSucess {
