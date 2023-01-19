@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family: 'League Spartan', sans-serif;
+}
+
+:root {
+    --body-bg-color: #121214;
+    --text-color: #E1E1E6;
+    --title-color: #04D361;
+    --form-color: #A8A8A8;
+    --bg-button-color: #8257e5;
+    --bg-button-color-hover: #936ee9
+}
+
+html {
+    background-color: var(--body-bg-color);
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background {
+    position: fixed;
+    width: 50%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+.background div {
+    display: flex;
+    justify-content: right;
+}
+.background .read-news-bg {
+    height: 100vh;
+
+}
+main {
+    /* margin: 3.125rem 2.875rem; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 20rem;
+}
+
+table {
+    border-collapse: collapse;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: .25rem .25rem .25rem rgb(0,0,0, .2);
+}
+
+table th {
+    height: 5rem;
+    background-color: var(--bg-button-color);
+    color: white;
+    font-weight: 500;
+}
+
+table th.id {
+    width: 7rem;
+}
+
+table th.email {
+    width: 24rem;
+}
+
+table th.options {
+    width: 12rem
+}
+
+table tbody tr {
+    background-color: white;
+    height: 3rem;
+    text-align: center;
+    transition: .2s;
+}
+table tbody tr:hover {
+    background-color: #dfd3fa;;
+    transition: .2s;
+}
+table tbody tr button {
+    border: none;
+    background-color: transparent;
+}
+table tbody tr img {
+    width: 2rem;
+    cursor: pointer;
+    opacity: .5;
+    transition: .2s;
+}
+table tbody tr img:hover {
+    transition: .2s;
+    opacity: 1;
+}
+
+a.home {
+    text-decoration: none;
+    color: white;
+}
+a.home div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    background-color: var(--bg-button-color);
+    width: 10rem;
+    height: 3.5rem;
+    border-radius: 1rem ;
+    transition: .2s;
+}
+a.home div:hover {
+    background-color: var(--bg-button-color-hover);
+    transition: .2s;
+}
