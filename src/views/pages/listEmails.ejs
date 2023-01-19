@@ -3,49 +3,55 @@
     <main>
         <!-- <a href=""><img class="logo" src="/assets/logo.svg" alt="logo"></a> -->
         <%- include('../partials/background') %>
-        <table>
-            <thead>
-                <th class="id">ID</th>
-                <th class="email">E-MAIL</th>
-                <th class="date">DATA DE CADASTRO</th>
-                <th class="options">AÇÕES</th>
-            </thead>
-            <tbody>
-                <% emails.forEach(email => { %>
-                    <tr>
-                        <td><%= email.id %></td>
-                        <td><%= email.email %></td>
-                        <td><%= email.createAt %></td>
-                        <td>
-                            <button type="button" class="delete">
-                                <img src="/assets/delete.svg" alt="img_delete" title="Excluir" value="<%- email.id %>">
-                            </button>
-                        </td>
-                        <div class="modal-alert" >
-                            <div class="modal-content">
-                                <div>
-                                    <p>Tem certeza que deseja deletar este e-mail?</p>
-                                </div>
-                                <div class="actions">
-                                    <a href="/emails/page/<%- currentPage %>/delete/<%- email.id %>">
-                                        <button class="modal-ok">Ok</button>
-                                    </a>
-                                    <button type="button" class="modal-cancel">Cancelar</button>
-                                </div>
-                            </div>
-                        </div>
-                    </tr>
-                <% }) %>
-            </tbody>
-        </table>
+        <div class="container-table">    
+            <div class="content">
 
-        <div class="pages-wrapper">
-            <% for( i = 1; i <= totalPages; i++ ) { %>            
-                <a href="/emails/page/<%- i %>">
-                    <div <% if(currentPage == i ) { %> class="currentPage" <% } %> ><%= i %></div>
-                </a>
-            <% } %>
+                <table>
+                    <thead>
+                        <th class="id">ID</th>
+                        <th class="email">E-MAIL</th>
+                        <th class="date">DATA DE CADASTRO</th>
+                        <th class="options">AÇÕES</th>
+                    </thead>
+                    <tbody>
+                        <% emails.forEach(email => { %>
+                            <tr>
+                                <td><%= email.id %></td>
+                                <td><%= email.email %></td>
+                                <td><%= email.createAt %></td>
+                                <td>
+                                    <button type="button" class="delete">
+                                        <img src="/assets/delete.svg" alt="img_delete" title="Excluir" value="<%- email.id %>">
+                                    </button>
+                                </td>
+                                <div class="modal-alert" >
+                                    <div class="modal-content">
+                                        <div>
+                                            <p>Tem certeza que deseja deletar este e-mail?</p>
+                                        </div>
+                                        <div class="actions">
+                                            <a href="/emails/page/<%- currentPage %>/delete/<%- email.id %>">
+                                                <button class="modal-ok">Ok</button>
+                                            </a>
+                                            <button type="button" class="modal-cancel">Cancelar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </tr>
+                        <% }) %>
+                    </tbody>
+                </table>
+        
+                <div class="pages-wrapper">
+                    <% for( i = 1; i <= totalPages; i++ ) { %>            
+                        <a href="/emails/page/<%- i %>">
+                            <div <% if(currentPage == i ) { %> class="currentPage" <% } %> ><%= i %></div>
+                        </a>
+                    <% } %>
+                </div>
+            </div>
         </div>
+
         
         <a href="/" class="home"><div>Voltar</div></a>
     </main>
